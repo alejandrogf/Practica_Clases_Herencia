@@ -8,24 +8,21 @@ namespace Practica_Clases_Herencia.clases
 {
     public class Circulo:Figuras
     {
-        private float _pi;
-        public float Pi
-        {
-            set
-            { _pi = (float) 3.1416; }
-            get
-            { return _pi; }
-        }
         public int Radio { get; set; }
 
-        public override float FuncionArea()
+        public override string FuncionArea()
         {
-            return (float) (Pi*Radio*Radio);
+            var area = Math.PI * Radio * Radio;
+            return "\n\nLa fórmula del área es: Pi X Radio^2.\n" +
+                   "Tu resultado es:" + Math.PI + "X" + Radio + "^2 =" + area;
         }
 
-        public override float FuncionPerimetro()
+        public override string FuncionPerimetro()
         {
-            return (float) (2*Pi*Radio);
+            var perimetro = Math.PI * Radio * Radio;
+            return "\n\nLa fórmula del perímetro es: 2 X Pi X Radio.\n" +
+                   "Tu resultado es: 2X" + Math.PI + "X" + Radio + "=" + perimetro;
+
         }
     }
 }

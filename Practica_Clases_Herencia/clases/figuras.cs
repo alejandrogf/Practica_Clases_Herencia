@@ -10,7 +10,7 @@ namespace Practica_Clases_Herencia.clases
     {
         public string NombreFigura { get; set; }
 
-        public abstract float FuncionArea();
-        public abstract float FuncionPerimetro();
+        public abstract string FuncionArea();
+        public abstract string FuncionPerimetro();
     }
 }

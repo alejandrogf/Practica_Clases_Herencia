@@ -13,14 +13,19 @@ namespace Practica_Clases_Herencia.clases
         public int Alto { get; set; }
 
 
-        public override float FuncionArea()
+        public override string FuncionArea()
         {
-            return Ancho*Alto;
+            var area = Alto*Ancho;
+            return "La fórmula del área es: Alto X Ancho.\n" +
+                   "Tu resultado es:"+ Alto + "+" + Ancho + "=" + area;
         }
 
-        public override float FuncionPerimetro()
+        public override string FuncionPerimetro()
         {
-            return (Ancho*2) + (Alto*2);
+            var perimetro = ((Alto*2) + (Ancho*2));
+            return "La fórmula del perímetro es: (Alto X 2) + (Ancho X 2).\n" +
+            "Tu resultado es: (" + Alto + "X 2 ) + (" + Ancho + "X 2) = " + perimetro;
+
         }
     }
 }
