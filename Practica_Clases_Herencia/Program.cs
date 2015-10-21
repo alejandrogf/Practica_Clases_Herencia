@@ -12,20 +12,18 @@ namespace Practica_Clases_Herencia
         
         static void Main(string[] args)
         {
-            string seleccion;
-            int ancho, alto, radio;
             Console.WriteLine("¿Qué figura deseas calcular?");
             Console.WriteLine("1.- Rectángulo.{0}2.- Circulo {0}", Environment.NewLine);
-            seleccion= Console.ReadLine();
+            var seleccion = Console.ReadLine();
             if (seleccion == "1")
             {
                 Console.WriteLine("{0}{0}Has elegido el rectángulo." +
                                   "{0}{0}Indica su ancho:", Environment.NewLine);
-                ancho = Int32.Parse(Console.ReadLine());
+                var ancho = double.Parse(Console.ReadLine());
 
                 Console.WriteLine("{0}Indica su alto:", Environment.NewLine);
 
-                alto = Int32.Parse(Console.ReadLine());
+                var alto = double.Parse(Console.ReadLine());
 
                 var rect = new Rectangulo()
                 {
@@ -41,7 +39,7 @@ namespace Practica_Clases_Herencia
 
                 Console.WriteLine("{0}{0}Has elegido el círculo." +
                                   "{0}{0}Indica su radio:", Environment.NewLine);
-                radio = Int32.Parse(Console.ReadLine());
+                var radio = double.Parse(Console.ReadLine());
 
                 var circ = new Circulo()
                 {

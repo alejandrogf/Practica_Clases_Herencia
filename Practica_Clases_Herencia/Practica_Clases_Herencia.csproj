@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="clases\Circulo.cs" />
     <Compile Include="clases\Figuras.cs" />
+    <Compile Include="clases\ICalculosGeometricos.cs" />
     <Compile Include="clases\Rectangulo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
